@@ -1,0 +1,4 @@
+<import src="/tpls/signin.wxml" />
+<template is="signin" data="{{modalHidden, ...userInfo}}"></template>
+<input value="{{text}}" />
+<text>{{text}}</text>

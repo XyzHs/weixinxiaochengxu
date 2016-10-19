@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+    <view bindtap="bindViewTap" class="userinfo">
+        <ul>
+            <li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">推荐</li>
+            <li class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">风尚</li>
+            <li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">乐活</li>
+            <li class="{{current == 3 ? 'active' : ''}}" catchtap="switchSlider" data-index="3">有趣</li>
+        </ul>
+    </view>
+
+    <view class="list-loading">
+        <loading hidden="{{loadingHidden}}">努力加载中...</loading>
+    </view>
+
+    <swiper class="usermotto" current="{{current}}" bindchange="changeSlider">
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scrollmotto" wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower">
+                <view hidden="{{refreshHidden}}">
+                    <button class="sxld" plain="true" loading="true">努力刷新中...</button>
+                </view>
+                <ul>
+                    <navigator url="../detail/detail?id={{item.id}}" wx:for="{{list}}" wx:for-item="item">
+                        <li>
+                            <image src="{{item.img}}" mode="aspectFill"></image>
+                            <b>{{item.title}}</b>
+                        </li>
+                    </navigator>
+                </ul>
+                <view hidden="{{loadmoreHidden}}">
+                    <button class="sxld" plain="true" loading="true">努力加载中...</button>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            lover me
+        </swiper-item>
+        <swiper-item>
+            lover her
+        </swiper-item>
+        <swiper-item>
+            lover he
+        </swiper-item>
+    </swiper>
+</view>

@@ -1,0 +1,41 @@
+page{
+    background: #ccc;
+}
+.slide-image{
+    width:100%;
+    height:150px;
+    display:block;
+    margin:0 auto;
+}
+.found-nav{
+    height: 60px;
+    background: #fafafa;
+}
+.found-nav li{
+    box-sizing: border-box;
+    padding:10px 20px;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 33.33%;
+    text-align: center;
+}
+.found-nav li image{
+    display: block;
+    width:25px;
+    height:25px;
+    margin: 0 auto;
+}
+.found-nav li p{
+    font-size: 12px;
+    color:#666;
+}
+.found-body{
+    flex: 1;
+}
+.found-body .modle{
+    display: block;
+    margin-top: 3px;
+    width: 100%;
+    background: #fafafa;
+}

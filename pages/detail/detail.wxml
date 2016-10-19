@@ -1,0 +1,5 @@
+<view class="d-container">
+    <view class="modle" wx:for="{{list}}" wx:for-item="item">
+        <image src="{{item.img}}" class="slide-image" mode="aspectFill" />
+    </view>
+</view>

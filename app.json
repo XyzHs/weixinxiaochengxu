@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/my/my",
+    "pages/video/video",
+    "pages/found/found",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/welfare/welfare"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fafafa",
+    "navigationBarTitleText": "宋胜勇",
+    "navigationBarTextStyle":"#ccc"
+  },
+  "tabBar":{
+    "color":"black",
+    "selectedColor":"green",
+    "backgroundColor":"#fafafa",
+    "borderStyle":"white",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath": "/images/home.png",
+      "selectedIconPath": "/images/home_light.png"
+    },{
+      "pagePath":"pages/found/found",
+      "text":"发现",
+     "iconPath": "/images/search.png",
+      "selectedIconPath": "/images/search_light.png"
+    },{
+      "pagePath":"pages/video/video",
+      "text":"视频",
+      "iconPath": "/images/camera.png",
+      "selectedIconPath": "/images/camera_light.png"
+    },{
+      "pagePath":"pages/welfare/welfare",
+      "text":"登录",
+      "iconPath": "/images/exit.png",
+      "selectedIconPath": "/images/exit_light.png"
+    },{
+      "pagePath":"pages/my/my",
+      "text":"我的",
+      "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my_light.png"
+    }]
+  }
+}

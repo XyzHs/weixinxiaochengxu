@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <swiper-item wx:for="{{list}}" wx:for-item="item">
+            <image src="{{item.img}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+    </swiper>
+    <view class="found-nav">
+        <li>
+            <image src="/images/index1.jpg" mode="aspectFit"></image>
+            <p>今日专栏</p>
+        </li>
+        <li>
+            <image src="/images/index2.jpg" mode="aspectFit"></image>
+            <p>排行榜</p>
+        </li>
+        <li>
+            <image src="/images/index3.jpg" mode="aspectFit"></image>
+            <p>作者排行</p>
+        </li>
+    </view>
+    <view class="found-body">
+        <view class="modle" wx:for="{{list}}" wx:for-item="item">
+            <image src="{{item.img}}" class="slide-image" mode="aspectFill" />
+        </view>
+    </view>
+</view>
